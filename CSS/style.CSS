@@ -47,11 +47,11 @@ nav{
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    background-color: darkorchid;
+    background-color: black;
 }
 a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 25px;
 }
 ul{
@@ -61,7 +61,23 @@ ul{
     height: 300px;
 }
 .block:nth-child(odd){
-    background-color: pink;
+    background-color: red;
 }.block:nth-child(even){
-    background-color: violet;
+    background-color: darkred;
+}
+#scrollToTop{
+    position: fixed;
+    opacity: 0;
+    bottom: 100px;
+    right: 100px;
+    height: 100px;
+    width: 100px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4em;
+    transition: all 1s;
 }
