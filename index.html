@@ -10,39 +10,137 @@
     <link rel="stylesheet" href="CSS/style.CSS">
 </head>
 <body>
+    <div id="top"></div>
     <nav>
         <ul>
             <li>
-                <a href="">Home</a>
+                <a href="#home">Home</a>
             </li>
         </ul>
         <ul>
             <li>
-                <a href="">Portfolio</a>
+                <a href="#folio">Portfolio</a>
             </li>
         </ul>
         <ul>
             <li>
-                <a href="">Contact</a>
+                <a href="#map">Contact</a>
             </li>
         </ul>
     </nav>
-    <div class="block"></div>
-    <div class="block"></div>
-    <div class="block"></div>
-    <div class="block"></div>
+        
+    <div id="home"></div>
+    <div class="block one">
+        <div class="slideshow-container">
+            <div id="1" class="slides active">
+                <img src="https://via.placeholder.com/300" alt="">
+                <div class="text">Caption text 1</div>
+            </div>
+            <div id="2" class="slides">
+                <img src="https://via.placeholder.com/300" alt="">
+                <div class="text">Caption text 2</div>
+            </div>
+            <div id="3" class="slides">
+                <img src="https://via.placeholder.com/300" alt="">
+                <div class="text">Caption text 3</div>
+            </div>
+            <div id="4" class="slides">
+                <img src="https://via.placeholder.com/300" alt="">
+                <div class="text">Caption text 4</div>
+            </div>
+            <a id="prev" class="prev arrow">&#10094;</a>
+            <a id="next" class="next arrow">&#10095;</a>
+        </div>
+    </div>
+
+    <div id="folio"></div>
+    <div class="block two">
+        <div class="toolbar mb2 mt2">
+            <button class="btn fil-cat" href="" data-rel="all">All</button>
+            <button class="btn fil-cat" data-rel="web">Websites</button>
+            <button class="btn fil-cat" data-rel="flyers">Flyers</button>
+            <button class="btn fil-cat" data-rel="bcards">Business Cards</button>
+            </div> 
+            
+            <div style="clear:both;"></div>   
+            <div id="portfolio">
+            <div class="tile scale-anm web all">
+                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/2-mon_1092-300x234.jpg" alt="" />
+            </div>
+            <div class="tile scale-anm bcards all">
+                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg" alt="" />
+            </div>
+            <div class="tile scale-anm web all">
+                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/emi_haze-300x201.jpg" alt="" />
+            </div>
+            <div class="tile scale-anm web all">
+                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/codystretch-300x270.jpg" alt="" />
+            </div>
+            <div class="tile scale-anm flyers all">
+                <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190" alt="" />
+            </div>
+            <div class="tile scale-anm bcards all">
+                <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" />
+            </div>
+            <div class="tile scale-anm flyers all">
+                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg" alt="" />
+            </div>
+            <div class="tile scale-anm flyers all">
+                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/transmission_01-300x300.jpg" alt="" />
+            </div>
+            <div class="tile scale-anm web all">
+                <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" />
+            </div>
+            <div class="tile scale-anm flyers all">
+                <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" /> 
+            </div>
+            <div class="tile scale-anm web all">
+                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/the-ninetys-brand_02-300x300.jpg" alt="" />
+            </div>
+            <div class="tile scale-anm bcards all">
+                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/15-dia_1092-1-300x300.jpg" alt="" />
+            </div>
+            <div class="tile scale-anm web all">
+                <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190" alt="" /> 
+            </div>
+            <div class="tile scale-anm bcards all">
+                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/emi_haze-300x201.jpg" alt="" />  
+            </div>
+            <div class="tile scale-anm web all">
+                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/transmission_01-300x300.jpg" alt="" />
+            </div> 
+            <div class="tile scale-anm web all">
+                <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190" alt="" />  
+            </div> 
+            <div class="tile scale-anm bcards all">     
+                <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" />
+            </div>
+        </div>
+                    
+        <div style="clear:both;"></div>   
+    </div>
+
+    <div id="map"></div>
+    <div class="block three ">
+        <div id="map"></div>
+    </div>
     <div class="block"></div>
     <div class="block"></div>
 
+    <a href="#top">
     <div id="scrollToTop" >
             <i class="fas fa-angle-up"></i>
     </div>
+    </a>
 
 
     <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDonTKGdk-HPCeS2X5KjojjZUImbQLJlCU&callback=initMap"
+    async defer></script>
     <script src="js/script.js"></script>
 </body>
 </html>
