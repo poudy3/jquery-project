@@ -9,7 +9,26 @@ $(window).on("scroll",function(){
         $("#scrollToTop").css("opacity", 0)
     }
 
+    // quand on scroll on execute la fonction
+ window.onscroll = function () { myFunction() };
+
+ // selectionner le header du html
+ var header = document.getElementById("myHeader");
+
+ // séléctionner la bar de nav en haut
+ var sticky = header.offsetTop;
+
+ //Ajoutez la classe sticky à l'en-tête lorsque l'on scrool et la supprimer quand on reviens en haut
+ function myFunction() {
+   if (window.pageYOffset > sticky) {
+     header.classList.add("sticky");
+   } else {
+     header.classList.remove("sticky");
+   }
+ }
+
 })
+
 $(".prev").on("click",function(){    //premiére fonction est pour aller à gauche
     var idSlide=$(".active").attr("id") // On crée une variable pour afficher l'identifiant de la slide qui à comme class active
     console.log(idSlide)       //On affiche sur la console l'identifiant de la slide qui à comme class active

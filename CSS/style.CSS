@@ -16,7 +16,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -78,7 +79,7 @@ table {
     display: block;
 }
 #portfolio{  
-      margin: 1rem 0;
+      margin: 0;
       -webkit-column-count: 3; 
       -moz-column-count: 3;
       column-count: 3;
@@ -93,8 +94,6 @@ table {
       transform: scale(0);
       -webkit-transition: all 350ms ease;
       transition: all 350ms ease;
-}.tile:hover{ 
-  
 }.scale-anm{
     transform: scale(1);
 }p{ 
@@ -191,8 +190,20 @@ ul{
     font-size: 4em;
     transition: all 1s;
 }#map{
-    height: 350px;
+    height: 700px;
     overflow: none;
+}.content{
+padding: 16px;
+}
+.sticky {
+z-index: 1;
+position: fixed;
+top: 0;
+width: 100%;
+font-size: 1px;
+}
+.sticky + .content {
+padding-top: 102px;
 }
 
 
